@@ -2,4 +2,4 @@
 # Максим
 Мои домашние задания 
 
-[Урок 12] (maxbet12.github.io/github/)
+[Урок 12](maxbet12.github.io/github/ "Моя готовая домашка")
