@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    <meta charset="UTF-8">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>ISLAND</title>
+</head>
+<body>
+
+<!-- Sprite -->
+<svg style="display: none">
+    <symbol id="facebook" viewBox="0 0 512 512">
+      <g>
+      <path d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z"/>
+      </g>
+    </symbol>
+
+    <symbol id="instagram" viewBox="0 0 511 511.9">
+        <g>
+            <path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/>
+        </g>
+    </symbol>
+    <symbol id="youtube" viewBox="-21 -117 682.66672 682">
+        <g>
+            <path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/>
+        </g>
+    </symbol>
+    <symbol>
+        <g>
+
+        </g>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 512 512">
+        <g>
+        <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+            c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+            l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+            c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"/>
+    </g>
+    </symbol>
+</svg>
+
+
+<!-- Header -->
+<header class="header">
+
+    <div class="header__inner">
+        <div class="header__logo">
+           <img src="./IMG/island_logo.png" alt="">
+               </div>
+                 <div class="container">
+                  <nav class="nav">
+                  <a class="nav__link" href="#" margin 0>Главная</a>
+                  <a class="nav__link" href="#">Клиентам</a>
+                  <a class="nav__link" href="#">Блог</a>
+                  <a class="nav__link" href="#">Контакты</a>
+          </nav>
+        </div>
+    </div>
+    <!-- RIGH__NAV -->
+
+   <div class="right__nav">
+      <div class="burger__menu"></div>
+       <button class="burger" type="button">
+          <span class="burger__item">menu</span>
+       </button>
+
+
+
+   </div>
+</header>
+
+
+
+
+<!-- INTRO -->
+
+<div class="intro">
+    <div class="container">
+    <div class="intro__inner">
+   <h1 class="intro__title">Незабываемые туры в страну льдов</h1>
+
+  <h2 class="intro__subtitle">
+ Хотите увидеть исландию и получить эмоции на всю жизнь?<br>
+Присоеденитесь к нашим группам!</h2>
+<a class="btn btn--blue" href="#">Выбрать тур</a>
+<input class="btn2" type="image" src="./IMG/btn/btn.video.png">
+   <p class="btn__text"> Смотреть видео</p>
+
+   </div>
+    </div>
+
+     <!-- social -->
+<div class="social__conent">
+<div class="social">
+    <a class="social__item" href="#">
+        <svg class="social__icon">
+            <use xlink:href="#facebook"></use>
+
+        </svg>
+    </a>
+    <a class="social__item" href="#">
+        <svg class="social__icon">
+            <use xlink:href="#instagram"></use>
+
+        </svg>
+    </a>
+    <a class="social__item" href="#">
+        <svg class="social__icon">
+            <use  xlink:href="#youtube"></use>
+
+        </svg>
+    </a>
+</div>
+ <!-- contact -->
+   <div class="contact">
+       <a class="contact__item" href="#" >+380 (409) 339-22-62 </a>
+       <a class="contact__item" href="#">+380 (409) 339-22-62 </a>
+       <a class="contact__item" >+380 (409) 339-22-62 </a>
+
+   </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- about__us -->
+
+    <div class="about__us">
+   <div class="video">
+       <iframe class="style__video" width="640" height="350" src="https://www.youtube.com/embed/Cuf4fAwvLww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </div>
+
+         <!-- left_window -->
+
+
+        <div class="left_window">
+               <p class="background_text">about us</p>
+                 <div class="container">
+                  <h3 class="header__about">Немного о нас </h3>
+                  <div class="border"></div>
+                <p class="about__us__subtitle">
+                  «Мы команда ice.travel, и путешествия<br>
+                  для нас-не бизнес, а ситль жизни.»</p>
+
+           <div class="about__us__advantages">
+               <div class="element__about__us" >
+               </div>
+               <p class="text__about__us">Работа по договору.</p>
+           </div>
+           <div class="about__us__advantages">
+             <div class="element__about__us" >
+              </div>
+              <p class="text__about__us">Группы до 12 людей.</p>
+           </div>
+             <div class="about__us__advantages">
+              <div class="element__about__us" >
+                  </div>
+            <p class="text__about__us">В команде только тревел фанаты.</p>
+            </div>
+              <div class="about__us__advantages">
+              <div class="element__about__us" >
+             </div>
+             <p class="text__about__us">Авторские маршруты и секретные локации.</p>
+              </div>
+           <div class="about__us__advantages">
+              <div class="element__about__us" >
+        </div>
+        <p class="text__about__us">Специализируется на Исландии.</p>
+       </div>
+          <p class="footer__about__us">
+            Посмотрите этот замечательный видео-ролик, он детально<br>описывают то, чем вам предостоит заняться путешествуя по<br>просмотрам Исландии!</p>
+            <a class="btn btn--blue" href="#">Выбрать тур</a>
+     </div>
+
+
+
+
+    </div>  <!-- right__WINDOWS -->
+
+    <div class="right__windows">
+           <div class="right__text">
+
+
+        <a class="name_windows">0.1</a>
+        <a>О нас</a>
+        </div>
+
+
+          <!-- Slider -->
+     <div class="slider_black">
+                 <div class="slider__item">
+                  <button class="item_black" href="#" ></button>
+                  <button class="item_black" href="#" ></button>
+                   <button class="item_black" href="#" ></button>
+                    <button class="item_black" href="#" ></button>
+                     <button class="item_black" href="#" ></button>
+                      <p class="item__text_black">О нас</p>
+          </div>
+          </div>
+    </div>
+</div>   <!-- about__us -->
+
+
+
+  <!-- tours -->
+
+
+ <div class="tours">
+    <div class="container">
+       <div class="right__text2">
+
+
+        <a class="name_windows">0.2</a>
+        <a>Туры</a>
+
+        </div>
+        <h4 class="tours__tittle">Ближайшие туры</h4>
+         <div class="border"></div>
+
+         <div class="card">
+
+             <div class="card__one">
+           <button class="card__day">8 дней</button>
+            <button class="card__money">от 1599 EUR</button>
+             <button class="card__date">05.09.2020</button>
+             <div class="card__text">
+             <p class="card__intro">Планета исландия</p>
+             <p class="card__subtittle">
+             Ты узнаешь все секреты самой<br>
+             северной столицы, увидишь активные<br>
+             гейзеры, посетишь ферму викингов, <br>
+             услышишь самый крисивый<br>
+              водопад Skogafos, влюбишься в Атлантический<br>
+             океан и найдешь сокровища на Diamond beach.<br>
+             </p>
+             <P class="card__footer">Подробнее</P>
+             <input class="archer__btn" type="button" style="background-image: url(./IMG/btn/archer.btn.png) ;" />
+             </div>
+             </div>
+                          <div class="card__two">
+                          <button class="card__day">7 дней</button>
+
+             <button class="card__money">от 1770 EUR</button>
+             <button class="card__date">15.09.2020</button>
+                           <div class="card__text">
+             <p class="card__intro">Исландия на внедорожниках</p>
+             <p class="card__subtittle">
+           Любишь путешествовать с ветероком?<br>
+           Поездка на Land Rover откроет для Вас <br>
+           не только туристические места, но и секретные<br>
+           локации, до которых можно добраться dfvdfgdfgdfgdfтолько на <br>
+           внедорожнике. Стоить только захотел!<br>
+             </p>
+             <P class="card__footer">Подробнее</P>
+             <input class="archer__btn" type="button" style="background-image: url(./IMG/btn/archer.btn.png) ;" />
+             </div>
+                          </div>
+
+                           <div class="card__three">
+                           <button class="card__day">10 дней</button>
+            <button class="card__money">от 2880 EUR</button>
+             <button class="card__date">02.10.2020</button>
+               <div class="card__text">
+             <p class="card__intro">Вокруг исландии за 10 дней</p>
+             <p class="card__subtittle">
+              Это флагманский тур. Мы обогнем <br>
+              всю Исландию по Ring Road. Ты побываешь <br>
+              в середине ледника, сделаешь фото с китом,<br>
+              отдохнешь в лучших SPA страны,  увидишь<br>
+              морских котиков, ощутишь мощь атлантического<br>
+              океана, увидишь самый большой водопад острова<br>
+
+             </p>
+             <div class="button__footer">
+             <P class="card__footer">Подробнее</P>
+             <input class="archer__btn" type="button" style="background-image: url(./IMG/btn/archer.btn.png) ;" />
+             </div>
+             </div>
+             </div>
+
+         </div>
+
+    </div>
+         <!-- Slider -->
+     <div class="slider_three">
+                 <div class="slider__item">
+                  <button class="item_black" href="#" ></button>
+                  <button class="item_black" href="#" ></button>
+                   <button class="item_black" href="#" ></button>
+                    <button class="item_black" href="#" ></button>
+                     <button class="item_black" href="#" ></button>
+                      <p class="item__text_black">Туры</p>
+          </div>
+          </div>
+ </div>
+
+    <!-- reviews -->
+    <div class="reviews">
+        <div class="Left__reviews">
+          <div class="container">
+           <h5 class="reviews__intro">Отзывы</h5>
+           <div class="border"></div>
+           <div class="reviews__name">Катя Л.</div>
+           <div class="reviews__subtitle">«Исландию надо видеть лично...»</div>
+           <div class="reviews__cart">
+
+               <img class="one__Img" src="IMG/icon/map.png">
+               <div class="reviews__onetext">Тур:</div>
+               <div class="reviews__twotext">Исландия на внедорожниках</div>
+
+
+
+
+
+               <div class="reviews__twocart">
+                <img class="one__Img" src="/IMG/icon/star.png">
+                <div class="reviews__onetext">Оценка:</div>
+               <div class="reviews__twotext">9/10</div>
+               </div>
+           </div>
+<p class="reviews__text">
+В Исландию собрались лететь дружной компанией <br>
+на новогодние праздники. Летели с пересадкой в Вене.<br>
+при этом не обошлось без неприятных неожиданностей<br>
+По прилету оказалось, что багаж полетел в Лондон,<br>
+казалось, отдых будет безнадежно испорчен.<br>
+Личные вещи в ручной клади явно не спасали ситуации.<br>
+Выручили друзья, которые тоже ехали в тур по Исландии<br>
+вместе с ice.travel, поделившись всем необходимым.<br>
+На отпуск и на впечатления от поездки, как окзалось,<br>
+потерянный ( а впоследсвии-найденный) багаж никак<br>
+не повлиял. Что запомнилось больше всего?<br>
+Безусловно-Blue Lagoon, ради которой, собственно,<br>
+мы и летели на отдых. Это чистый восторг и искреннее<br>
+удивление от того, настолько гармоничным может быть<br>
+единение человека и природных сил.
+</p>
+
+
+          <button class="give__feedback">
+          <p class="reviews__us">Оставить отзыв </p>
+
+        <svg class="social__svg">
+            <use xlink:href="#arrow"></use>
+
+        </svg>
+
+           </button>
+           </div>
+        </div>
+         <div class="right__reviews">
+         <div class="right__text3">
+        <div class="container">
+
+        <a class="name_windows">0.3</a>
+        <a>Отзывы</a>
+        </div>
+        </div>
+ <div class="slider_white">
+                 <div class="slider__four">
+                  <button class="item_white " href="#" ></button>
+                  <button class="item_white " href="#" ></button>
+                   <button class="item_white " href="#" ></button>
+                    <button class="item_white " href="#" ></button>
+                     <button class="item_white " href="#" ></button>
+                      <p class="item__text_white">Отзывы</p>
+          </div>
+          </div>
+          <div class="btn__arrow">
+              <button class="left__arrow" ></button>
+              <button class="right__arrow" ></button>
+          </div>
+          <div class="reviews__slide">
+<div class="slide__reviews1"></div>
+             </div>
+</div>
+
+
+    </div>
+
+
+<!-- choose__tour -->
+<div class="choose__tour">
+
+<!-- 1 -->
+<section class="container__card">
+    <div class="img__box" style="background-image: url(IMG/photoTOUR/1.jpg.png)">
+       <div class="choose__Container">
+        <div class="choose__tittle">Londrangar View Point</div>
+          <div class="border"></div>
+
+          <div class="choose__subtittle">
+          Лондрангар или Londrangar View Point- самая красивая <br>
+          смотровая площадка планеты</div>
+          <div class="choose__footer">
+              <img class="footer__location" src="/IMG/photoTOUR/location.png" alt="">
+              <p class="Choose__sity">Исландия, Хедльнар</p>
+              <img class="arrow__click" src="./IMG/photoTOUR/arrow_click.png" alt="">
+          </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!--2-->
+<section class="container__card">
+    <div class="img__box" style="background-image: url(IMG/photoTOUR/2.png)">
+        <div class="choose__Container">
+        <div class="choose__tittle">Vatnshellir Vave</div>
+          <div class="border"></div>
+
+          <div class="choose__subtittle">
+          Лавовая пещера Vatnshellir Cave- путешествие
+           к центру Земли</div>
+          <div class="choose__footer">
+              <img class="footer__location" src="/IMG/photoTOUR/location.png" alt="">
+              <p class="Choose__sity">Исландия, Лондрангар</p>
+              <img class="arrow__click" src="./IMG/photoTOUR/arrow_click.png" alt="">
+          </div>
+        </div>
+    </div>
+</section>
+
+<!--3-->
+<section class="container__card">
+    <div class="img__box" style="background-image: url(IMG/photoTOUR/3.jpg)">
+         <div class="choose__Container">
+        <div class="choose__tittle">Reykjadalur river</div>
+          <div class="border"></div>
+
+          <div class="choose__subtittle">
+          Горячая река Рейкьадалур бесплатный СПА <br>
+          в Исландии</div>
+          <div class="choose__footer">
+              <img class="footer__location" src="/IMG/photoTOUR/location.png" alt="">
+              <p class="Choose__sity">Исландия, Рейкявик</p>
+              <img class="arrow__click" src="./IMG/photoTOUR/arrow_click.png" alt="">
+          </div>
+        </div>
+    </div>
+
+</section>
+
+<!--4-->
+<section class="container__card">
+    <div class="img__box_max" style="background-image: url(IMG/photoTOUR/4.jpg)">
+          <div class="choose__Container">
+        <div class="choose__tittle">Горячие источники Миватн</div>
+          <div class="border"></div>
+
+          <div class="choose__subtittle">
+          Природные источники Myvatn-  это комплекс геотермальных бассейинов паровых <br>
+          бань, расположенные в двух километрах от озера Миватн на севере Исландии.</div>
+          <div class="choose__footer">
+              <img class="footer__location" src="/IMG/photoTOUR/location.png" alt="">
+              <p class="Choose__sity">Исландия, Миватн</p>
+              <img class="arrow__click_max" src="./IMG/photoTOUR/arrow_click.png" alt="">
+          </div>
+        </div>
+    </div>
+
+</section>
+
+<!--5-->
+<section class="container__card">
+    <div class="img__box_max" style="background-image: url(IMG/photoTOUR/5.jpg)">
+          <div class="choose__Container">
+        <div class="choose__tittle">Встреча с китом в Исландии</div>
+          <div class="border"></div>
+
+          <div class="choose__subtittle">
+          Какие киты водятся в Исландии? Когда лучше всего ехать на остров, чтобы точно их <br>
+          увидеть? Как проходят китовые сафари, что нужно брать с собой, как одеваться,
+          можно ли поехать детям?</div>
+          <div class="choose__footer">
+              <img class="footer__location" src="/IMG/photoTOUR/location.png" alt="">
+              <p class="Choose__sity">Исландия, Хусавик</p>
+              <img class="arrow__click_max" src="./IMG/photoTOUR/arrow_click.png" alt="">
+          </div>
+        </div>
+    </div>
+
+</section>
+
+ <div class="slider_white_5">
+                 <div class="slider__four">
+                  <button class="item_white " href="#" ></button>
+                  <button class="item_white " href="#" ></button>
+                   <button class="item_white " href="#" ></button>
+                    <button class="item_white " href="#" ></button>
+                     <button class="item_white " href="#" ></button>
+
+          </div>
+          </div>
+
+    </div>
+
+
+    <!--footer-->
+    <footer class="footer">
+ <div class="container">
+        <div class="footer__logo">
+           <img src="./IMG/island_logo.png" alt="">
+               </div>
+               <div class="footer__nav">
+                   <div class="one_nav">
+                           <a class="tittle__footer" href="#" >Главная</a>
+                          <a class="subtittle__footer" href="#" >Туры</a>
+                          <a class="subtittle__footer" href="#" >Отзывы</a>
+                   </div>
+                         <div class="two_nav">
+                             <a class="tittle__footer" href="#">Клиентам</a>
+                             <a class="subtittle__footer" href="#" >Про команду ice. Travel</a>
+                          <a class="subtittle__footer" href="#" >Оплата</a>
+                          <a class="subtittle__footer" href="#" >Частые вопросы</a>
+                          <a class="subtittle__footer" href="#" >Фото с поездок</a>
+                           <a class="subtittle__footer" href="#" >Отзывы</a>
+                         </div>
+                   <div class="three__nav">
+
+                      <a class="tittle__footer" href="#">Блог</a>
+
+                   </div>
+                   <div class="four__nav">  <a class="tittle__footer" href="#">Контакты</a></div>
+                    <div class="contact__footer">
+       <a class="footer__call" href="#" >+380 (409) 339-22-62 </a>
+       <a class="footer__call" href="#">+380 (409) 339-22-62 </a>
+       <a class="footer__call" href="#">+380 (409) 339-22-62 </a>
+
+
+    <div class="social__footer">
+    <a class="social__item" href="#">
+        <svg class="social__icon">
+            <use xlink:href="#facebook"></use>
+
+        </svg>
+    </a>
+    <a class="social__item" href="#">
+        <svg class="social__icon">
+            <use xlink:href="#instagram"></use>
+
+        </svg>
+    </a>
+    <a class="social__item" href="#">
+        <svg class="social__icon">
+            <use  xlink:href="#youtube"></use>
+
+        </svg>
+    </a>
+</div>
+  <p class="guard">IceTravel 2020. Все права защищены.</p>
+    </div>
+
+     </div>
+    </div>
+    </footer>
+</body>
+</html>
+
